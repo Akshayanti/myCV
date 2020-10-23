@@ -1,0 +1,234 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+% process publications automatically
+\usepackage{bibentry} 
+
+% Document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} 
+
+% Show URLs better
+\usepackage{hyperref}
+
+% Set Footer to indicate when this was last updated
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\fancyfoot[R]{\textcolor{gray}{Last Updated on \today}}
+
+% goodies
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\renewcommand{\labelitemi}{$\circ$}
+
+
+% Name
+% Current Address
+% Perm Address
+% Phone, Email, Website
+\name{Akshay Aggarwal}
+\address{Apartment 4, Vltavsk{\'a} 20, Prague, Czechia 15000}
+\address{335 Avas Vikas, Roorkee, Uttarakhand, India 247667}
+\address{\url{akshayantimatter@gmail.com} \\ \url{https://github.com/Akshayanti}}
+
+\begin{document}
+
+% file to read publications from
+\nobibliography{publications}
+% set reference format
+\bibliographystyle{acm}
+
+%-------------------------------------------------------------------------------
+%	Work and Education Details
+%-------------------------------------------------------------------------------
+
+% Format of Work Details-
+% {\bf Position, Company, location} \hfill {time period}\\
+    % responsibilities involved
+    
+% Format of Education Details-
+    % {\bf Uni Name, Country} \hfill {time period }\\
+    % {major, degree name}\\
+    % GPA: xx / yy
+% Include your GPA only for education finished within last 2 years
+\begin{rSection}{Work And Education}
+
+    {\bf Software Developer (R\&D), Twilio s.r.o, Prague, Czechia} \hfill
+        {November 2020 - Present}\\
+            L1 Software Developer at \textbf{EDIT ME}
+    
+    {\bf Charles University (UK), Czechia} \hfill
+        {\em Erasmus Mundus Joint Degree}\\
+    {\bf University of the Basque Country (UPV-EHU), Spain} \hfill
+        {September 2017 - September 2020}\\
+            Computational Linguistics, Master of Science (M.S.)\\
+            GPA, UK (Graduated September 2020): ?? / ??\\
+            GPA, UPV-EHU (Graduated September 2019): 8.64 / 10
+    
+    {\bf Universit\'e de Technologie de Compi\`egne (UTC), France} \hfill
+        {January - June 2016}\\
+            International Student Exchange
+    
+    {\bf Vellore Institute of Technology (VIT), Vellore, India} \hfill
+        {July 2012 - June 2016}\\
+            Information Technology, Bachelor of Technology (B.Tech)
+
+\end{rSection}
+
+
+%-------------------------------------------------------------------------------
+%	Technical Details
+%-------------------------------------------------------------------------------
+\begin{rSection}{Skills and Interests (EDIT THIS)}
+
+\begin{rSubsection}{Programming Languages, Databases, Other Tools}{}{}{}
+\item C, C++, Java11, Python3
+\item Neo4j, Oracle, MySQL, 
+\item Linux, Git, RegEx, NumPy (Python Library), TensorFlow (Python Library), JIRA
+\end{rSubsection}
+
+\begin{rSubsection}{Areas of Interest}{}{}{}
+    Morpho-Syntax; Computational Morphology; Syntax; Syntactic Parsing; 
+    Universal Dependencies Project (UD); Deep Learning; Machine Translation 
+    (Statistical, Neural); Word Sense Disambiguation; Information Retrieval; 
+    Language Independent Tools; Indic Languages; Endangered Languages; Low 
+    Resource Languages
+\end{rSubsection}
+
+\end{rSection}
+
+%-------------------------------------------------------------------------------
+%    Publications
+%-------------------------------------------------------------------------------
+
+% automatically filled from publications.bib
+% insert new entries towards the top
+\begin{rSection}{Publications}
+
+    % {\bibentry{tlt20}}
+
+    {\bibentry{thesiscuni}}
+
+    {\bibentry{socialmedia}}
+    
+    {\bibentry{remote}}
+
+    {\bibentry{datamonitor}}
+
+\end{rSection}
+
+
+%-------------------------------------------------------------------------------
+%    Projects
+%-------------------------------------------------------------------------------
+
+% {Project Name}\\
+    % {Project GitHub Link}
+\begin{rSection}{Selected Projects}
+
+    {Data-driven Derinet2.0 for Indic Languages (In Progress)}\\
+        \url{https://github.com/Akshayanti/Indic-Derinet-2.0}
+
+    {Sub-Reddit Identification of Reddit Data using Different Classification Algorithms}\\
+        \url{https://github.com/Akshayanti/reddit_classification}
+
+    {What's Your Grammatical Gender?}\\
+        \url{https://github.com/Akshayanti/what-is-your-gender}
+
+    {Source Transfer Tagging with Parameter Estimation for Improving Projection Quality}\\
+        \url{https://github.com/Akshayanti/cross-lingual-tagging}
+
+\end{rSection}
+
+
+%-------------------------------------------------------------------------------
+%    Internships
+%-------------------------------------------------------------------------------
+
+% {Title, Company, Location} 
+    % \hfill {Duration}\\
+        % Responsibility during internship
+\begin{rSection}{Internships}
+
+    {R\&D Software Development, Twilio s.r.o, Prague, Czechia} 
+        \hfill {April 2020 - October 2020}\\
+            \textbf{JOB DESCRIPTION HERE}
+    
+    {Network Administrator, Telenor Communications Pvt. Ltd., Dehradun, India} 
+        \hfill {June 2014}\\
+            Analysis of Network Infrastructure, and suggesting changes for 
+            better reliability of the network
+
+\end{rSection}
+
+
+
+%-------------------------------------------------------------------------------
+%    Awards, Competitions, Honors
+%-------------------------------------------------------------------------------
+
+% {Name of the entry} \hfill
+    % {Year received}
+\begin{rSection}{Awards, Competitions, Honors}
+    {Erasmus+ Mobility grant by Charles University} \hfill
+        {2018}
+
+    {Charpak Exchange Scholarship by French Embassy in India} \hfill
+        {2016}
+
+    {Organizer, ComicBuzz VIT, a mini Comic-con, organized as an event} \hfill
+        {2015}
+
+    {Bronze Level, International Award for Young People (IAYP)} \hfill
+        {2012}
+\end{rSection}
+
+
+%-------------------------------------------------------------------------------
+%    References
+%-------------------------------------------------------------------------------
+
+% \textbf{Name of Reference} \hfill {How you know them}\\
+% Department Affiliation\\
+% University/College they work in\\
+% Email: \url{somebody@someplace.com}
+\begin{rSection}{References}
+
+    \begin{enumerate}
+        \item \textbf{Daniel Zeman} \hfill Supervisor, Master's Thesis\\
+            Institute of Formal and Applied Linguistics (UFAL)\\
+            Charles University (UK), Czech Republic\\
+            Email: \url{zeman@ufal.mff.cuni.cz}
+        
+        \item \textbf{Koldo Gojenola} \hfill Co-Supervisor, Master's Thesis\\
+            IXA Research Group, Computer Languages and Systems (LSI)\\
+            University of Basque Country (UPV-EHU), Spain\\
+            Email: \url{koldo.gojenola@ehu.eus}
+        
+        \item \textbf{Oier Lopez De Lacalle Lekuona}\\
+            IXA Research Group, Computer Languages and Systems (LSI)\\
+            University of Basque Country (UPV-EHU), Spain\\
+            Email: \url{oier.lopezdelacalle@ehu.eus}
+    \end{enumerate}
+
+\end{rSection}
+
+\end{document}
