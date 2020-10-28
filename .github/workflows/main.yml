@@ -8,9 +8,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: |
-            Resume_academic.tex
-            Resume_professional.tex
-          working_directory: tex/
+            tex/Resume_academic.tex
+            tex/Resume_professional.tex
       - name: Upload
         uses: actions/upload-artifact@master
         with:
