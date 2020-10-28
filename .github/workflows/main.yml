@@ -12,9 +12,15 @@ jobs:
           root_file: |
             Resume_academic.tex
             Resume_professional.tex
-      - name: Upload
+      - name: Upload Academic CV
         uses: actions/upload-artifact@master
         with:
-          name: PDF
-          path: ./
+          name: academic.pdf
+          path: ./Resume_academic.pdf
+        if: always()
+      - name: Upload Professional CV
+        uses: actions/upload-artifact@master
+        with:
+          name: professional.pdf
+          path: ./Resume_professional.pdf
         if: always()
