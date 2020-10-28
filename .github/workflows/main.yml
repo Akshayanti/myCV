@@ -25,4 +25,4 @@ jobs:
           path: ./Resume_professional.pdf
         if: always()
       - name: upload to CV branch
-        run: git add Resume_*.pdf; git config user.email "akshayantimatter@gmail.com"; git config user.name "CV Writer"; git commit -m "Updated CVs"; git push origin CVs;
+        run: git add Resume_*.pdf; git config user.email "akshayantimatter@gmail.com"; git config user.name "CV Writer"; git commit -m "Updated CVs"; git push -u origin CVs;
