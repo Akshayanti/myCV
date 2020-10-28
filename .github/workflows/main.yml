@@ -24,3 +24,5 @@ jobs:
           name: professional.pdf
           path: ./Resume_professional.pdf
         if: always()
+      - name: upload to CV branch
+        run: git commit -m "New CV" ./Resume_*.pdf; git push origin CVs;
