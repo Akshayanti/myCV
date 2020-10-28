@@ -25,4 +25,4 @@ jobs:
           path: ./Resume_professional.pdf
         if: always()
       - name: upload to CV branch
-        run: ls -lh *; git commit -m "New CV" ./Resume_*.pdf; git push origin CVs;
+        run: ls -lh *; git commit -m "New CV" Resume_*.pdf; git push origin CVs;
