@@ -1,0 +1,19 @@
+name: Build PDF version
+on:	[push]
+jobs:
+	build_pdf:
+		runs-on: ubuntu-latest
+		steps:
+			- name: Compile Resumes
+			  uses: xu-cheng/latex-action@v2
+			  with:
+          root_file: |
+            Resume_academic.tex
+            Resume_professional.tex
+					working_directory: ./
+			- name: Upload
+        uses: actions/upload-artifact@master
+        with:
+          name: test
+          path: test
+        if: always()
