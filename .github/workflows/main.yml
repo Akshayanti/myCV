@@ -1,17 +1,17 @@
 name: Test Action
 on:	[push]
 jobs:
-	test:
-		runs-on: ubuntu-latest
-		steps:
-			- name: Compile Resumes
-			  uses: xu-cheng/latex-action@v2
-			  with:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compile Resumes
+        uses: xu-cheng/latex-action@v2
+        with:
           root_file: |
             Resume_academic.tex
             Resume_professional.tex
-					working_directory: ./
-			- name: Upload
+          working_directory: ./
+      - name: Upload
         uses: actions/upload-artifact@master
         with:
           name: test
