@@ -25,4 +25,4 @@ jobs:
           path: ./Resume_professional.pdf
         if: always()
       - name: upload to CV branch
-        run: git checkout CVs; git rm -rf *.tex *.md *.bib *.txt *.cls .github; git add Resume_*.pdf; git config user.email "akshayantimatter@gmail.com"; git config user.name "CV Writer"; git commit -m "Updated CVs"; echo "showing refs"; git show-ref; git status; git push -u origin CVs;
+        run: git checkout -b CVs; git rm -rf *.tex *.md *.bib *.txt *.cls .github; git add Resume_*.pdf; git config user.email "akshayantimatter@gmail.com"; git config user.name "CV Writer"; git commit -m "Updated CVs"; echo "showing refs"; git show-ref; git status; git push -u origin CVs;
