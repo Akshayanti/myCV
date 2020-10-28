@@ -10,10 +10,10 @@ jobs:
           root_file: |
             Resume_academic.tex
             Resume_professional.tex
-          working_directory: tex
+          working_directory: tex/
       - name: Upload
         uses: actions/upload-artifact@master
         with:
-          name: tex
-          path: tex
+          name: tex/
+          path: tex/
         if: always()
