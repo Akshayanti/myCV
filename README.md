@@ -4,4 +4,4 @@
 Latex Source for CV. Separate items for academic CV and professional CV
 
 
-To download latest CVs, download the artifacts from the first listing [here](https://github.com/Akshayanti/myCV/actions?query=is%3Acompleted+workflow%3A%22Created+CV%22)
+View (automatically) rendered CVs [here](https://github.com/Akshayanti/myCV/tree/CVs)
