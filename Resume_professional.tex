@@ -29,6 +29,7 @@
 \usepackage{fancyhdr}
 \usepackage{xcolor}
 \usepackage{todonotes}
+\usepackage{fontawesome}
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
@@ -46,12 +47,17 @@
 % Perm Address
 % Phone, Email, Website
 \name{Akshay Aggarwal}
-\address{Vltavsk{\'a} 20, Prague, Czechia 15000}
-\address{\href{mailto:akshayantimatter@gmail.com}{akshayantimatter@gmail.com} \\                \url{https://akshayanti.github.io}}
+\address{
+    \faAt \hspace{0.5mm} \href{mailto:akshayantimatter@gmail.com}{akshayantimatter@gmail.com} \\    
+    \faMapMarker \hspace{0.5mm} Prague, Czechia 15000}
+\address{
+    \faGlobe \hspace{0.5mm} \url{https://akshayanti.github.io} \\
+    \faGithub \hspace{0.5mm} \url{https://github.com/Akshayanti}}
 
 % set reference format
 \usepackage{natbib}
 \bibliographystyle{plainnat}
+\setlength{\parskip}{8pt}
 
 \begin{document}
 
@@ -78,17 +84,17 @@
     {\textbf{Twilio}, Czechia}\\
             L2 Software Engineer, Flex Insights Real-Time team \hfill \textit{Oct 2021 - Present}\\
             L1 Software Engineer, Flex Insights Real-Time team \hfill \textit{Nov 2020 - Sept 2021}
+            
+    Worked with the team to create roles and services necessary to allow release of the GA version of Flex Insights while picking up on knowledge about Kafka, Test-Driven Development, Docker and Terraform, among others
     
     {\textbf{Charles University (UK)}, Czechia} \hfill
         {\em Erasmus Mundus Joint Degree}\\
     {\textbf{University of the Basque Country (UPV-EHU)}, Spain} \hfill
-        {\textit{September 2017 - September 2020}}\\
-            M.S., Computational Linguistics\\
-            GPA, UPV-EHU (Graduated September 2019): 8.64 / 10%\\
-            % GPA, UK (Graduated September 2020): ?? / ??
-    
+        {\textit{Sept 2017 - Sept 2020}}\\
+            Master of Science (M.S.), Computational Linguistics
+
     {\textbf{Universit\'e de Technologie de Compi\`egne (UTC)}, France} \hfill
-        {\textit{January - June 2016}}\\
+        {\textit{Jan - June 2016}}\\
             International Student Exchange
     
     {\textbf{Vellore Institute of Technology (VIT)}, India} \hfill
@@ -107,13 +113,10 @@
         % Responsibility during internship
 \begin{rSection}{Internships}
 
-    {\textbf{R\&D Software Engineer} at \textbf{Twilio}, Czechia} 
-        \hfill {\textit{April - October 2020}}\\
-            Learnt industry level coding standards in Java while working with Flex Insights team on their projects
-    
-    {\textbf{Network Administrator} at \textbf{Telenor Communications Pvt. Ltd.}, India} 
-        \hfill {\textit{June 2014}}\\
-            Analysis of Network Infrastructure, and monitoring for network reliability
+    {\textbf{Software Engineer Intern} at \textbf{Twilio}, Czechia} 
+        \hfill {\textit{Apr - Oct 2020}}
+        
+    Worked on team projects, and helped shipping the public Beta version of Flex Insights while picking up necessary skills for use in monitoring of production-based systems
 
 \end{rSection}
 
@@ -122,14 +125,12 @@
 %	Technical Details
 %-------------------------------------------------------------------------------
 \begin{rSection}{Skills and Interests}
-    {\textbf{Programming Languages}: Python3, Java, C, C++}
+    {\textbf{Programming/Sripting Languages}: Bash, C, C++, Java, NodeJS, Python3, Terraform}
     
-    {\textbf{Others}: GitHub, Docker, Kafka, TensorFlow2, Pandas, Numpy}
+    {\textbf{Tools and Technologies}: Git, Docker, Kafka, TensorFlow2, scikit-learn, pandas, numpy, matplotlib, seaborn}
     
     \begin{rSubsection}{Areas of Interest}{}{}{}
-        Morpho-Syntax; Morphology; Syntax; Parsing; Deep Learning; Machine Translation; 
-        Language Independent Tools; Indic Languages; Endangered Languages; Low Resource 
-        Languages
+        Morphology, Syntax, Dependency Parsing, Deep Learning, Machine Learning, Machine Translation, Language Independent Tools, Low Resource Languages, Indic Languages
     \end{rSubsection}
 \end{rSection}
 
@@ -139,20 +140,17 @@
 
 % automatically filled from publications.bib
 % insert new entries towards the top
-\begin{rSection}{Publications}
+\begin{rSection}{Selected Publications}
 
-    {\bibentry{tabudag}}
-
-    {\bibentry{tlt20}}
-
-    {\bibentry{thesiscuni}}
-
-    {\bibentry{socialmedia}}
+    {\bibentry{clicit21}}
     
-    \newpage
-    {\bibentry{remote}}
-
-    {\bibentry{datamonitor}}
+    {\bibentry{tabudag}}
+    
+    {\bibentry{tlt20}}
+    
+    {\bibentry{thesiscuni}}
+    
+    {\bibentry{socialmedia}}
 
 \end{rSection}
 
@@ -163,9 +161,6 @@
 % {Project Name}\\
     % {Project GitHub Link}
 \begin{rSection}{Selected Projects}
-
-    {Treebank Expansion and Validation In Low-Resource Languages \hfill \textit{In Progress}}\\
-        \url{https://github.com/Akshayanti/Lisca_Low_Resource}
 
     {Sub-Reddit Identification of Reddit Data using Different Classification Algorithms in R}\\
         \url{https://github.com/Akshayanti/reddit_classification}
@@ -179,25 +174,36 @@
 \end{rSection}
 
 %-------------------------------------------------------------------------------
-%    Awards, Competitions, Honors
+%    Additional Information
 %-------------------------------------------------------------------------------
 
-% {Name of the entry} \hfill
-    % {Year received}
-\begin{rSection}{Awards, Competitions, Honors}
-    {Erasmus+ Mobility grant by Charles University} \hfill
-        {2018}
+\begin{rSection}{Additional Information}
+ 
+    % Languages if you know any additional except English and your mothertongue
+    % Format- lang1, lang2 \hfill {\em Fluency Level}
+    \begin{rSubsection}{Spoken Languages}{}{}{}
+        \item Hindi, English \hfill {\em Native/Bilingual Proficiency (C2)}
+        \item Spanish, French \hfill {\em Basic Proficiency (A2)}
+        \item Japanese \hfill {\em Basic Proficiency (N5)}
+    \end{rSubsection}
 
-    {Charpak Exchange Scholarship by French Embassy in India} \hfill
-        {2016}
+    \begin{rSubsection}{Awards, Competitions, Honors}{}{}
+    
+        \item Received Erasmus+ Mobility grant by Charles University
+            \hfill {2018}
+        
+        \item Received Charpak Exchange Scholarship by French Embassy in India 
+            \hfill {2016}
+        
+        \item {Organizer, ComicBuzz VIT, a mini Comic-con, organized as an 
+            event} \hfill {2015}
+        
+        \item Received Bronze Level, International Award for Young People (IAYP)
+            \hfill {2012}
+    
+    \end{rSubsection}
 
-    {Organizer, ComicBuzz VIT, a mini Comic-con, organized as an event} \hfill
-        {2015}
-
-    {Bronze Level, International Award for Young People (IAYP)} \hfill
-        {2012}
 \end{rSection}
-
 
 %-------------------------------------------------------------------------------
 %    References
@@ -210,15 +216,15 @@
 \begin{rSection}{References}
 
     \begin{enumerate}
+        \item \textbf{Ale\v{s} Krac\'{i}k} \hfill Senior Manager, Flex\\
+            Flex Insights Real-Time\\
+            Twilio, Czechia\\
+            \faEnvelope \hspace{0.5mm} \href{mailto:akracik@twilio.com}{akracik@twilio.com}
+
         \item \textbf{Daniel Zeman} \hfill Supervisor, Master's Thesis\\
             Institute of Formal and Applied Linguistics ({\'U}FAL)\\
             Charles University (UK), Czechia\\
-            Email: \href{mailto:zeman@ufal.mff.cuni.cz}{zeman@ufal.mff.cuni.cz}
-        
-        \item \textbf{Koldo Gojenola} \hfill Co-Supervisor, Master's Thesis\\
-            IXA Research Group, Computer Languages and Systems (LSI)\\
-            University of Basque Country (UPV-EHU), Spain\\
-            Email: \href{mailto:koldo.gojenola@ehu.eus}{koldo.gojenola@ehu.eus}
+            \faEnvelope \hspace{0.5mm} \href{mailto:zeman@ufal.mff.cuni.cz}{zeman@ufal.mff.cuni.cz}
     \end{enumerate}
 
 \end{rSection}
