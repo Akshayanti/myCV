@@ -12,7 +12,6 @@ jobs:
           root_file: |
             Resume_academic.tex
             Resume_professional.tex
-          compiler: pdflatex
       - name: Upload Academic CV
         uses: actions/upload-artifact@master
         with:
