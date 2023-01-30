@@ -50,6 +50,12 @@
 \bibliographystyle{plainnat}
 \setlength{\parskip}{8pt}
 
+
+\patchcmd{\rSection}
+  {\MakeUppercase{\bf #1}}
+  {\textbf{\MakeUppercase{#1}}}
+  {}{}
+
 \begin{document}
 
 % file to read publications from
