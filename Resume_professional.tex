@@ -31,6 +31,7 @@
 \usepackage{todonotes}
 \usepackage{fontawesome}
 \usepackage{import}
+\usepackage{xcolor}
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
@@ -41,7 +42,6 @@
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \renewcommand{\labelitemi}{$\circ$}
-
 
 \import{Common Sections/}{metadata}
 
@@ -62,30 +62,24 @@
 \nobibliography{publications}
 
 %-------------------------------------------------------------------------------
-%	Work and Education Details
+%	Work Experience
 %-------------------------------------------------------------------------------
 
-\begin{rSection}{\faInstitution \hspace{0.5mm} Work And Education}
+\begin{rSection}{\faBriefcase \hspace{0.5mm} Work Experience}
 
     \import{Common Sections/}{work_ex}
-    
-    \import{Common Sections/}{masters}
-    
-    \import{Common Sections/}{education_before_masters}
 
 \end{rSection}
 
+
 %-------------------------------------------------------------------------------
-%    Internships
+%	Education Details
 %-------------------------------------------------------------------------------
 
-% {\textbf{Title}, Company, Location} 
-    % \hfill {Duration}\\
-        % Responsibility during internship
-\begin{rSection}{\faBriefcase \hspace{0.5mm} Internships}
+\begin{rSection}{\faGraduationCap \hspace{0.5mm} Education}
 
-    \import{Common Sections/}{internships}
-
+    \import{Common Sections/}{education}
+    
 \end{rSection}
 
 %-------------------------------------------------------------------------------
@@ -105,16 +99,16 @@
 % Department Affiliation\\
 % University/College they work in\\
 % Email: \href{mailto:somebody@someplace.com}{somebody@someplace.com}
-\begin{rSection}{\faComments \hspace{0.5mm} References}
+% \begin{rSection}{\faComments \hspace{0.5mm} References}
 
-    \begin{enumerate}
-        \import{Common Sections/}{common references}
+%     \begin{enumerate}
+%         \import{Common Sections/}{common references}
         
-        \item \textbf{Dio Correa} \hfill Software Architect\\
-            Inditex, Spain\\
-            \faEnvelope \hspace{0.5mm} \href{mailto:contact@diocorrea.com}{contact@diocorrea.com}
-    \end{enumerate}
+%         % \item \textbf{Dio Correa} \hfill Software Architect\\
+%         %     Inditex, Spain\\
+%         %     \faEnvelope \hspace{0.5mm} \href{mailto:contact@diocorrea.com}{contact@diocorrea.com}
+%     \end{enumerate}
 
-\end{rSection}
+% \end{rSection}
 
 \end{document}
