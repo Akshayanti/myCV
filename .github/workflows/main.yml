@@ -22,7 +22,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: professional.pdf
-          path: ./Resume_professional.pdf
+          path: ./Resume_DS.pdf
         if: always()
       - name: upload to CV branch
         run: git push origin --delete CVs; git checkout -b CVs; git rm -rf *.tex *.md *.bib *.txt *.cls .github; git add Resume_*.pdf; git config user.email "akshayantimatter@gmail.com"; git config user.name "CV Writer"; git commit -m "Updated CVs"; echo "showing refs"; git show-ref; git status; git push -u origin CVs;

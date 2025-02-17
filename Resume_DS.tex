@@ -1,0 +1,133 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+% process publications automatically
+\usepackage{bibentry} 
+
+% Document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} 
+
+% Show URLs better
+\usepackage{hyperref}
+
+% Set Footer to indicate when this was last updated
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{todonotes}
+\usepackage{fontawesome}
+\usepackage{import}
+\usepackage{xcolor}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+\fancyfoot[R]{\textcolor{gray}{Last Updated on \today}}
+
+% goodies
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\renewcommand{\labelitemi}{$\circ$}
+
+\import{Common Sections/}{metadata}
+
+% set reference format
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+\setlength{\parskip}{8pt}
+
+
+\patchcmd{\rSection}
+  {\MakeUppercase{\bf #1}}
+  {\textbf{\MakeUppercase{#1}}}
+  {}{}
+
+\begin{document}
+
+\nobibliography{publications}
+
+\begin{rSection}{About}
+    Dynamic and detail-oriented Machine Learning Engineer and Data Scientist with a robust background in Natural Language Processing (NLP) and Software Engineering. 
+    With an M.S. in Computational Linguistics, I excel in applying data-driven methodologies to solve complex problems and drive innovation.
+    Proficient in Python, TensorFlow, and scikit-learn, I specialize in developing AI-powered automation solutions and scalable systems.
+    Currently leveraging my software engineering expertise to transition into advanced ML and Data Science roles, with a passion for enhancing efficiency and accuracy in data processing and analysis.
+\end{rSection}
+
+\begin{rSection}{Machine Learning \& Data Science Experience}
+
+    \subsection*{NLP Research \& AI Projects}
+        \begin{itemize}
+            \item \textbf{Intelligent FAQ Chatbot for Internal Documentation} (Cisco)
+                \begin{itemize}
+                    \item Developed and deployed an AI-powered FAQ chatbot using Langchain \& GPT-3 LLM, reducing support query resolution time by 40\%
+                    \item Integrated the chatbot with internal Confluence pages, improving self-service adoption by 35\%
+                    \item Technologies: Python, Langchain, OpenAI API, FastAPI
+                \end{itemize}
+            \item \textbf{Applied NLP for Automated Text Processing \& Classification}
+                \begin{itemize}
+                    \item Designed and implemented machine learning models for automated text classification, entity recognition, and sentiment analysis, improving annotation accuracy by 15\%
+                    \item Developed dependency parsing and machine translation pipelines, enhancing multilingual text analytics and improving translation accuracy by 20\%
+                    \item Built scalable NLP workflows to process large-scale text data, integrating transformer models (BERT, XLM-R) for improved language processing efficiency
+                    \item Technologies: Python, Hugging Face, Transformers, TensorFlow, NLP frameworks
+                \end{itemize}
+        \end{itemize}
+
+    \subsection*{ML \& Data Science Projects}
+        \begin{itemize}
+            \item \textbf{Cross-Lingual Text Classification for Low-Resource Languages}
+                \begin{itemize}
+                    \item Built a cross-lingual tagging system leveraging transfer learning, increasing annotation projection accuracy by 20\%
+                    \item Applied transformer-based NLP models (BERT, XLM-R) for language-independent text classification
+                    \item Technologies: Python, Hugging Face, Transformers, NLP
+                \end{itemize}
+            \item \textbf{Automated Stock Portfolio Optimization}
+                \begin{itemize}
+                    \item Developed an ML-based portfolio optimization tool using predictive analytics on historical stock data, improving investment return simulations by 30\%
+                    \item Built an automation tool using Selenium \& Python to interact with stock portfolios on Google Finance, reducing manual update time by 80\%
+                    \item Technologies: Python, scikit-learn, pandas, Selenium
+                \end{itemize}
+        \end{itemize}
+\end{rSection}
+
+\begin{rSection}{Software Engineering Experience}
+
+    \subsection*{Software Engineer (ML/Data Engineering) | Cisco, Czechia (Aug 2023 - Present)}
+        \begin{itemize}
+            \item Designed and implemented data ingestion pipelines to process high-volume telemetry data from multiple sources, improving data accuracy and analysis efficiency
+            \item Developed automated data visualization dashboards for on-premises security products, enabling real-time insights for threat detection and network monitoring
+            \item Built scalable ETL workflows to aggregate and process structured \& unstructured telemetry logs, reducing data processing time by 40\%%
+            \item Led migration from RAML to OpenAPI, improving API documentation interoperability and reducing integration time by 50\%
+            \item Technologies: Java, Scala, RabbitMQ, Terraform, Docker, Pandas, NumPy
+        \end{itemize} 
+    \subsection*{Software Engineer (Data Pipeline) | Twilio, Czechia (Nov 2020 - June 2023)}
+        \begin{itemize}
+            \item Optimized a Kafka Streams pipeline, reducing real-time data processing latency from 45s to 25s
+            \item Led Infrastructure-as-Code (IaC) adoption using Terraform, automating resource provisioning and cutting deployment time by 35\%%.
+            \item Enhanced testing frameworks with mutation testing, chaos testing, and load testing, improving test coverage by 40\%
+            \item Technologies: Java, Kafka, Docker, Terraform, Buildkite, Jenkins, Selenium, AWS
+        \end{itemize}
+\end{rSection}
+
+\begin{rSection}{Education}
+    \begin{itemize}
+        \item \textbf{M.S. in Computational Linguistics} | Charles University (Czechia) \& University of the Basque Country (Spain)
+        \item \textbf{B.Tech in Information Technology} | Vellore Institute of Technology, India
+    \end{itemize}
+\end{rSection}
+
+
+\begin{rSection}{Technical Skills}
+    \begin{itemize}
+        \item \textbf{Programming Languages}: Java, Python, Bash
+        \item \textbf{ML \& AI}: Tensorflow, scikit-learn, NLP, Model Deployment, Deep Learning, LLMs
+        \item \textbf{Big Data \& Engineering}: Kafka, Docker, Terraform, Kubernetes, Data Pipelines
+        \item \textbf{Cloud \& Deployment}: AWS, FastApi, CI/CD Pipelines, MLOps
+    \end{itemize}
+\end{rSection}
+
+\begin{rSection}{Selected Publications}
+    \begin{enumerate}
+        \item A. Aggarwal and C. Alzetta, ``Atypical or Underrepresented? A Pilot Study on Small Treebanks," CLiC-it 2021, CEUR-WS.org, 2022. [Online]. {\href{http://ceur-ws.org/Vol-3033/paper78.pdf}{Access Link}}
+        \item A. Aggarwal and D. Zeman, ``Estimating POS Annotation Consistency of Different Treebanks," Workshop on Treebanks and Linguistic Theories, ACL, 2020. [Online]. \href{https://www.aclweb.org/anthology/2020.tlt-1.9}{Access Link}
+        \item A. Aggarwal, Consistency of Linguistic Annotation, M.S. thesis, Charles Univ., 2020. [Online]. \href{https://dspace.cuni.cz/handle/20.500.11956/120867}{Access Link}
+    \end{enumerate}
+\end{rSection}
+\end{document}
